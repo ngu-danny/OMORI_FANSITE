@@ -1,2 +1,3 @@
-# OMORI-FANSITE
+# WELCOME TO WHITE SPACE
+
 A fanmade website for OMORI's WHITE SPACE

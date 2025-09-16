@@ -1,0 +1,176 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  max-width: 100%;
+  display: flex;
+  z-index: 100;
+}
+
+.black-overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 50;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.event-container {
+  position: absolute;
+  height: 614px;
+  width: 80vw;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+}
+
+#info {
+  width: 42px;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#volume {
+  width: 43px;
+  height: 41px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+@media (min-width: 982px) {
+  #lightbulb {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 328px;
+  }
+
+  #door {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 121px;
+    height: 228px;
+    transform: translateX(-50%) translateX(-300px);
+  }
+
+  #carpet {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+  }
+
+  #sketchbook {
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    transform: translateX(-50%) translateX(270px);
+  }
+
+  #laptop {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%) translateX(-100px);
+  }
+
+  #tissue {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%) translateX(350px);
+  }
+
+  #mewo {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: 165px;
+    height: 100px;
+    transform: translateX(-50%) translateX(-415px);
+  }
+}
+
+@media (max-width: 981px) {
+  #lightbulb {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 328px;
+  }
+
+  #door {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 121px;
+    height: 228px;
+    transform: translateX(-50%) translateX(-300px);
+  }
+
+  #carpet {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+  }
+
+  #sketchbook {
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    transform: translateX(-50%) translateX(270px);
+  }
+
+  #laptop {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%) translateX(-100px);
+  }
+
+  #tissue {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%) translateX(350px);
+  }
+
+  #mewo {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: 165px;
+    height: 100px;
+    transform: translateX(-50%) translateX(-415px);
+  }
+}
