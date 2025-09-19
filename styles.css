@@ -62,9 +62,12 @@ header {
 }
 
 @media (min-width: 982px) {
-  #lightbulb {
+  .wrapper img {
     position: absolute;
     left: 50%;
+  }
+
+  #lightbulb {
     top: -10%;
     transform: translateX(-50%);
     width: 100px;
@@ -72,8 +75,6 @@ header {
   }
 
   #door {
-    position: absolute;
-    left: 50%;
     top: 30%;
     width: 121px;
     height: 228px;
@@ -81,36 +82,26 @@ header {
   }
 
   #carpet {
-    position: absolute;
-    left: 50%;
     bottom: 0%;
     transform: translateX(-50%);
   }
 
   #sketchbook {
-    position: absolute;
-    left: 50%;
     top: 73%;
     transform: translateX(-50%) translateX(270px);
   }
 
   #laptop {
-    position: absolute;
-    left: 50%;
     top: 65%;
     transform: translateX(-50%) translateX(-100px);
   }
 
   #tissue {
-    position: absolute;
-    left: 50%;
     top: 85%;
     transform: translateX(-50%) translateX(350px);
   }
 
   #mewo {
-    position: absolute;
-    left: 50%;
     top: 90%;
     width: 165px;
     height: 100px;
