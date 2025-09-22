@@ -9,7 +9,9 @@
     <link rel="icon" href="favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="textbox"></div>
+    <div id="textbox" hidden>
+      <p id="text"></p>
+    </div>
     <div class="sprite"></div>
     <div class="black-overlay" hidden></div>
     <div class="wrapper">
@@ -29,6 +31,12 @@
       </button>
       <button id="volume">
         <img src="images/soundoff.png" alt="VOLUME" />
+        <audio id="white-space" loop>
+          <source src="audio/WHITE_SPACE.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="black-space" loop>
+          <source src="audio/BLACK_SPACE.mp3" type="audio/mpeg" />
+        </audio>
       </button>
     </header>
     <script src="index.js"></script>

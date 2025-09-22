@@ -1,17 +1,38 @@
 const infoButton = document.getElementById("info");
 const volumeButton = document.getElementById("volume");
+const whiteSpaceAudio = document.getElementById("white-space");
+const blackSpaceAudio = document.getElementById("black-space");
+
+function showTextBox() {
+  let textbox = document.getElementById("textbox");
+  textbox.hidden = false;
+  textbox.classList.add("animate-open");
+}
+
+function hideTextBox() {
+  let textbox = document.getElementById("textbox");
+  textbox.classList.remove("animate-open");
+  textbox.classList.add("animate-close");
+  textbox.addEventListener(
+    "animationend",
+    () => {
+      textbox.hidden = true;
+      textbox.classList.remove("animate-close");
+    },
+    { once: true }
+  );
+}
 
 // --- info button ----------------------------------------------------
-
 infoButton.addEventListener("click", (event) => {
   if (event.target.src.includes("images/infoonhover.png")) {
     event.target.src = "images/infooffhover.png";
-    // display black overlay
-    // display info box
+    showTextBox();
+    // add text
   } else if (event.target.src.includes("images/infooffhover.png")) {
     event.target.src = "images/infoonhover.png";
-    // remove info box
-    // remove black overlay
+    // remove text
+    hideTextBox();
   }
 });
 
@@ -32,14 +53,14 @@ infoButton.addEventListener("mouseout", (event) => {
 });
 
 // --- volume button ---------------------------------------------------
-
+// TO DO: add black space difference
 volumeButton.addEventListener("click", (event) => {
   if (event.target.src.includes("images/soundonhover.png")) {
     event.target.src = "images/soundoffhover.png";
-    // turn off bgm
+    whiteSpaceAudio.pause();
   } else if (event.target.src.includes("images/soundoffhover.png")) {
     event.target.src = "images/soundonhover.png";
-    // turn on bgm
+    whiteSpaceAudio.play();
   }
 });
 
